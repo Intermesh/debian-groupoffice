@@ -10,4 +10,4 @@ dbc_generate_include_args="-U -o template_infile='/usr/share/doc/groupoffice/con
 dbc_go groupoffice "$@"
 
 a2enconf groupoffice
-invoke-rc.d apache2 reload > /dev/null || true
+systemctl reload apache2
