@@ -2,4 +2,7 @@
 
 . /usr/share/debconf/confmodule
 . /usr/share/dbconfig-common/dpkg/prerm
-dbc_go groupoffice-com $@
+dbc_go groupoffice $@
+
+a2disconf groupoffice
+systemctl reload apache2
