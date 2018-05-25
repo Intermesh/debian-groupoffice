@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /usr/share/debconf/confmodule
+. /usr/share/dbconfig-common/dpkg/prerm
+dbc_go groupoffice-com $@
