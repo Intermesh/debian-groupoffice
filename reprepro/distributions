@@ -5,6 +5,7 @@ Codename: 63-php-70
 Components: main
 Architectures: amd64
 
+SignWith: yes
 Codename: 63-php-71
 Components: main
 Architectures: amd64
