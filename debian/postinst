@@ -3,13 +3,13 @@
 . /usr/share/debconf/confmodule
 dbc_generate_include_owner="root:www-data"
 dbc_generate_include_perms="0640"
-dbc_generate_include=template:/etc/groupoffice/conf.php
-dbc_generate_include_args="-U -o template_infile='/usr/share/doc/groupoffice/conf.php.tpl'"
+dbc_generate_include=template:/etc/groupoffice/config.php
+dbc_generate_include_args="-U -o template_infile='/usr/share/doc/groupoffice/config.php.tpl'"
        
 . /usr/share/dbconfig-common/dpkg/postinst
 dbc_go groupoffice "$@"
 
 a2enconf groupoffice
-systemctl reload apache2
+invoke-rc.d apache2 reload
 
 chown www-data:www-data /var/lib/groupoffice
