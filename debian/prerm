@@ -5,4 +5,4 @@
 dbc_go groupoffice $@
 
 a2disconf groupoffice
-systemctl reload apache2
+invoke-rc.d apache2 reload
