@@ -9,6 +9,7 @@ Homepage: http://www.group-office.com
 Package: groupoffice
 Architecture: all
 Depends: libapache2-mod-php (>=7),	
+	apache2,
 	mysql-server | mariadb-server,
 	php-mysql,
 	php-gd,
@@ -16,6 +17,7 @@ Depends: libapache2-mod-php (>=7),
 	php-curl,
 	php-xsl,
 	php-xml,
+	php-mbstring,
 	unzip,
 	tar,
 	zip,
