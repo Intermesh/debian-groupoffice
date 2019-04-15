@@ -10,7 +10,7 @@ Package: groupoffice
 Architecture: all
 Depends: libapache2-mod-php (>=7),	
 	apache2,
-	mysql-server | mariadb-server,
+	mariadb-server | mysql-server,
 	php-mysql,
 	php-gd,
 	php-cli,
